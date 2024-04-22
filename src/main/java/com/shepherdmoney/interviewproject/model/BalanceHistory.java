@@ -1,6 +1,6 @@
 package com.shepherdmoney.interviewproject.model;
 
-import java.time.Instant;
+import java.time.LocalDate;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -22,7 +22,7 @@ public class BalanceHistory {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     
-    private Instant date;
+    private LocalDate date;
 
     private double balance;
     

@@ -1,6 +1,6 @@
 package com.shepherdmoney.interviewproject.vo.request;
 
-import java.time.Instant;
+import java.time.LocalDate;
 
 import lombok.Data;
 
@@ -9,7 +9,7 @@ public class UpdateBalancePayload {
 
     private String creditCardNumber;
     
-    private Instant transactionTime;
+    private LocalDate balanceDate;
 
-    private double transactionAmount;
+    private double balanceAmount;
 }
