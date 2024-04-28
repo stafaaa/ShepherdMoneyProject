@@ -49,6 +49,10 @@ public class CreditCardController {
         //      For example: if today is 4/12, a credit card's balanceHistory is [{date: 4/12, balance: 110}, {date: 4/10, balance: 100}],
         //      Given a balance amount of {date: 4/11, amount: 110}, the new balanceHistory is
         //      [{date: 4/12, balance: 120}, {date: 4/11, balance: 110}, {date: 4/10, balance: 100}]
+        //      This is because
+        //      1. You would first populate 4/11 with previous day's balance (4/10), so {date: 4/11, amount: 100}
+        //      2. And then you observe there is a +10 difference
+        //      3. You propagate that +10 difference until today
         //      Return 200 OK if update is done and successful, 400 Bad Request if the given card number
         //        is not associated with a card.
         
