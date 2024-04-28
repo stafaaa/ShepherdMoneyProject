@@ -31,7 +31,9 @@ public class CreditCard {
     // TODO: Credit card's balance history. It is a requirement that the dates in the balanceHistory 
     //       list must be in chronological order, with the most recent date appearing first in the list. 
     //       Additionally, the last object in the "list" must have a date value that matches today's date, 
-    //       since it represents the current balance of the credit card. For example:
+    //       since it represents the current balance of the credit card.
+    //       This means that if today is 04-16, and the list begin as empty, you receive a payload for 04-13,
+    //       you should fill the list up until 04-16. For example:
     //       [
     //         {date: '2023-04-10', balance: 800},
     //         {date: '2023-04-11', balance: 1000},
