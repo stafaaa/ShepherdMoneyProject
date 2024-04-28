@@ -24,7 +24,7 @@ Any files with content marked with **TODO** will contains hints on what to add. 
 
 ## Models
 Following is a component overview of the models. You can find more hints in the source code files as well
-- `User`: each user has their name, date of birth, and some (or none) credit cards associated with them
+- `User`: each user has their name, and some (or none) credit cards associated with them
 - `CreditCard`: each credit card has issance bank, card number, who the card belongs to, and a list of balance history
 - `BalanceHistory`: credit card balance for a specific date.
 
