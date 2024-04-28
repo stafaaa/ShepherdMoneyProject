@@ -1,5 +1,11 @@
 # Shepherd Money Interview Project
 
+## UPDATES
+Here is a list of updates we have made to the projects from questions asked by applicants
+- 04/28/2024
+  - User model does not have to have DOB field. That description has been removed from the README
+  - There is a typo in the balance history update method, claiming that the most recent entry should be the first in the list while the example shows otherwise. We have modified our grading script such that both sorting direction works. Just make sure its sorted with one direction.
+
 ## Introduction
 
 Thanks for your interest in applying to Shepherd Money! Complete this short toy project before your interview to help us evaluate your skills as a software engineer. It shouldn't take more than an hour if you know Spring Boot. We look forward to seeing your work and learning more about you!
