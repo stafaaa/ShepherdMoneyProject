@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -22,7 +23,6 @@ public class User {
 
     private String email;
 
-    // TODO: User's credit card
-    // HINT: A user can have one or more, or none at all. We want to be able to query credit cards by user
-    //       and user by a credit card.
+    @OneToMany(mappedBy = "owner", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private Set<CreditCard> creditCards;  // Store the user's credit cards
 }
